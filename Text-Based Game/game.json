@@ -1,0 +1,862 @@
+{
+    
+    "start_state" : "start",
+
+    "states" : {
+        
+        "start": {
+            "text" : "You are in a prison cell by yourself. Your bed is to the right of you.<br><br>To the left of you theres a table that holds your food tray, a spork, and a knife.<br><br>Behind you is an open window where you can see towers outside.<br><br>Lastly, in front of you is your barred gate where you can see a guard much bigger than you, snoozing at his desk with his keys on his table.<br><br>A = You go take a nap. <br> B/D = You convince the guard to let you free. <br> C = You squeeze your way out through the windows.",
+            "next_state" : [ 
+                               {
+                                    "state_name" : "A", 
+                                    "key_input"  : "A"
+                                },
+                                {
+                                    "state_name" : "B",
+                                    "key_input"  :"B"
+                                },
+                                {
+                                    "state_name" : "C",
+                                    "key_input"  :"C"
+                                },
+                                {
+                                    "state_name" : "B",
+                                    "key_input"  :"D"
+                                }
+                            ]
+        },
+
+        
+        "A" : {
+            "text" : "You take a nap longer than you wanted and you woke up the next day. <br> The guards open your gate and is about to handcuff you so they can walk you to the cafeteria for breakfast.<br> A/B = You make a run for it.<br> C = You jump out the window behind you. <br> D = You obey your orders.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AA",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "C",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AD",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "AD" : {
+            "text" : "The guard handcuffs you and takes you to the cafeteria. You get your food and sat at an empty table. All around you were different gangs. One of them, a group of 5 surrounded you and took your food. <br> A/B = Fight them. C/D = Let it slide. ",
+            "next_state" : [ 
+                {
+                    "state_name" : "ADA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "ADA",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "ADC",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "ADC",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "ADC" : {
+            "text" : "You ignore them and continued to sit in the table alone. A few minutes later a fight break out in the cafeteria. The guards all came in and try to break up the fight and all you saw was everybody fighting each other. Outside you saw some prisoners going down the stairs. On each side of the cafeteria there was a door. Across the room from you, you see an elevator. <br> A = go down the stairs. <br> B = go to the door on the left. <br> C = go to the door on the right. <br> D = You run to the elevator.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AAA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AAAC",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AAAD",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AAAAB",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "ADA" : {
+            "text" : "You sucker punched the person that stole your food and he instantly spit out the food. The other members of the gang quickly jumped you. You continued to fight them until one of them pulled out a shiv and stabbed you repeatedly onto your stomach before the guards could even run and stop the fight. <br> Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "AA" : {
+            "text" : "Right when the guard came closer, you dashed right around him and made a run for it. The other prisoners saw you and decided to join you for a chance of freedom. You see a group of prisoners going down the stairs. Other groups were standing their ground fighting. In a different cell you see a hole leading to the sewers. <br> A/B = You follow the group of prisoners down the stairs. <br> C = You fight alongside your prisoners against the guards. <br> D = You go into the sewers.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AAA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AAA",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AAC",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AAD",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AAD" : {
+            "text" : "You go down the sewers and you see 3 different pathways. <br> A = go to path 1, B = go to path 2. <br> C/D = go to path",
+            "next_state" : [ 
+                {
+                    "state_name" : "AADA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AADB",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AADC",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AADC",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AADC" : {
+            "text" : "You go down to path 3 and you see the one and only teenage mutant ninja turtles. They asked you where you came from. <br> A = Fight them <br> B = Tell them the truth. <br> C/D = Pick this if you don't know who they are, because smh.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AADCA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AADCB",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "AADCB" : {
+            "text" : "You told them the truth that you are trying to escape from prison and to your surprise they were willing to invite you to their team after the initiation tests. They tested you on your strength, agility, and intelligence. Although you did not even come close to passing the tests, their master was impressed by your efforts and agreed to train you. After many years of training, you became one of them even though you were just a human. <br> Congrats, you survived! Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "AADCA" : {
+            "text" : "Either you should have chose C/D on the previous question or you are just very delulu to think you would get out alive fighting them alone with no weapons. Game Over! <br> Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "AADB" : {
+            "text" : "You walk into path 2 and you see a giant rat and it sees you! You try to run back but the rat had superhuman speed and eventually ate you alive. <br> Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AADA" : {
+            "text" : "You walk into path 1 and noticed a strange noise from up ahead. You continue to go forward and suddenly you see a giant tarantula, almost 3x your size!!! You try to run back but there were baby tarantulas surrounding you and before you know it, you were their family dinner. <br> Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AAC" : {
+            "text" : "You fight alongside your prisoners but they brought in reinforcements. You realize the chances of you winning this battle is slim. <br> A = Continue to fight honorably. <br> B = Run back downstairs to join the other group of prisoners. <br> C/D = Jump into the sewers.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AACA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AAA",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AAD",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AAD",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AACA" : {
+            "text" : "More guards kept coming and brought in stronger equipment. Eventually they outnumbered you and your prisoners and inevitably you all died an honorable death.<br> Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AAA" : {
+            "text" : "You follow other prisoners down the stairs. People were pushing each other all around you. Eventually, you found yourself outside a gate and into a hallway where you see armed guards in front of you, ready for war. You see doors on both sides of the hallway but it was too dark to see where they lead to. <br> A/B = You charge alongside your group of cellmates at the armed guards. <br> C = You rush to the left door. <br> D = You rush to the door on the right.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AAAA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AAAA",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AAAC",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AAAD",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "AAAC" : {
+            "text" : "You open the door to the left and turned on the lights. You see a giant robot. The robot wakes up from the light. The robot scans your uniform and recognizes you as a prisoner and instantly fires at you. Game over! <br> Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "AAAD" : {
+            "text" : "You open the door to the right and turned on the lights. You find yourself in a giant laboratory where you see creatures trapped in prison cells. You notice those creatures are wearing the same uniform as you but they look like goblins. A scientist saw you and quickly called for the guards to come. <br> A/B = Unlock all the cells. <br> C/D = You make a run for it.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AAADA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AAADA",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AAADC",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AAADC",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "AAADC" : {
+            "text" : "You turn around and try to open the door but it was already locked. You look around and you see one other door across the room from you. You sprint your way over there and opened the door. You see an elevator straight ahead so you ran as fast as you can to the elevator and kept pressing the elevator button. Finally it opens and you get in slamming the close door button repeatedly. Straight ahead you see multiple guards chasing after you and right when they were about to reach you the door closes. You realize you are on the 3rd floor. <br>A/B = go to the 2nd floor. <br>C/D = go to the first floor.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AAAABA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AAAABA",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AAAABC",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AAAABC",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "AAADA" : {
+            "text" : "You unlock all the cells and these creatures instantly went wild jumping on the scientists, guards, and you. You try your best to defend yourself but there were too many of them and are much stronger than any human being. <br> Game Over! Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+        },
+
+        "AAAA" : {
+            "text" : "As you guys fight and push the guards, more reinforcements come in with better gear. You see an elevator to the left and a new pathway to the right. <br> A = You continue to fight until every single guard is dead. <br> B = You rush to the elevator. <br> C/D = You run to the pathway on the right.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AAAAA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AAAAB",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AAAAC",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AAAAC",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        }, 
+
+        "AAAAC" : {
+            "text" : "You run to the pathway on the right but it leads to a dead end. You turn around and saw a few guards already surrounding you. You try your best to fight your way out but you have got outnumbered. <br> Game over! <br> Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        }, 
+
+        "AAAAA" : {
+            "text" : "You continue to fight the guards but they keep coming stronger. They soon bought up guards with guns. You and your fellow prisoners died honorably. Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AAAAB" : {
+            "text" : "You rush to the elevator and instantly pressed the button. As you wait for the elevator to open, one of the guards saw you. He started sprinting at you as the elevator opens. You quickly get inside and kept pressing the close button praying the guard won't make it. Right when the guard was about to reach you, the door closes. You realize you're on the third floor of the prison. <br> A/B= go to the 2nd floor. <br> C/D = go to the 1st floor.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AAAABA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AAAABA",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AAAABC",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AAAABC",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AAAABC" : {
+            "text" : "The door opens to the first floor and you see a bunch of guards. They heard the elevator and saw you and instantly shot you before you can close the elevator or make a run for it. <br> Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AAAABA" : {
+            "text" : "You go to the second floor. The door opens and you see an armory. You see all sorts of weapons and armor. You start putting on armor, a helmet that covers your face and got yourself a pistol, a baton, and an assault rifle. Since there was no other paths you walk back into the elevator and went to the first floor. The door opens and you see armed guards walking around patroling the place, but have not noticed you yet. <br>A/B = You shoot all of them. <br> C/D = You slowly walk out, pretending to be a guard.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AAAABAA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AAAABAA",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AAAABAC",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AAAABAC",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AAAABAC" : {
+            "text" : "You walk out to the front door without the guards realizing you are a prisoner. Outside the prison is surrounded by giant walls. Each corner of the walls stood a tower. You see guards driving giant jeeps, but there are no empty vehicles. In front of you, you see the exit with some guards. <br> A/B = Walk straight to the exit, shoot the guards guarding it and make a run for it. <br> C/D = Hijack a vehicle GTA style.",
+            "next_state" : [ 
+                {
+                    "state_name" : "AAAABACA",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "AAAABACA",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "AAAABACC",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "AAAABACC",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AAAABACC" : {
+            "text" : "You opened the door to one of the jeeps, shot the driver with your pistol. The passenger guard looked at you surprised and confused and attempts to pull out their weapon. You quickly shot him too and pulled the driver's dead body out of the vehicle and quickly got in. All the other guards noticed and started chasing after you. You hit the gas as hard as you can swerving left and right to dodge the bullets. Eventually you drove right past the exit and out of the prison. Mission Successful!!! You Win!!! <br> Press any button to play again.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AAAABACA" : {
+            "text" : "You walked to the exit, shot the guards and made a run for it. The other guards heard the gunshots and quickly used their jeeps to chase you down. You try to shoot their tires but there were too many vehicles chasing you and eventually one of them ran you over. <br> Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+        "AAAABAA" : {
+            "text" : "Ok hold up, game creator here talking to you, yes you the player. You really think that was a good idea to shoot multiple armed guards by yourself? Game over, you dead. <br>Press any button to restart.",
+            "next_state" : [ 
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }
+             ]
+            
+        },
+
+
+
+        "B" : {
+            "text" : "You wake the guard up and try your best to pursuade him to let you out. <br> He got annoyed so he takes out his baton and opens your cell, ready to beat you to death for waking him up. <br><br> A/B = You fight him<br> C/D = You back up to the window and quickly squeeze your way out the window.",
+            "next_state" : [
+            {
+                "state_name" : "BA",
+                "key_input"  : "A"
+            },
+            {
+                "state_name" : "BA",
+                "key_input"  :"B"
+            },
+            {
+                "state_name" : "C",
+                "key_input"  :"C"
+            },
+            {
+                "state_name" : "C",
+                "key_input"  :"D"
+            }
+        ]
+        },
+
+        "BA" : {
+            "text" : "You land a couple good jabs but he had reinforcements to beat you up. They then pushed you into a deep whole. As you got back on your feet, you found yourself deciding between 4 different paths to go to. There was a path going right, left, foward, and behind you. <br> A = Go foward, B = Go to the left <br> C = Go to the right, D = Go to the path behind you.",
+            "next_state" : [
+            {
+                "state_name" : "BAA",
+                "key_input"  : "A"
+            },
+            {
+                "state_name" : "BAB",
+                "key_input"  :"B"
+            },
+            {
+                "state_name" : "BAC",
+                "key_input"  :"C"
+            },
+            {
+                "state_name" : "BAD",
+                "key_input"  :"D"
+            }
+        ]
+        },
+
+        "BAA" : {
+            "text" : "You continued on forward and found a ladder. You climbed up and went through a narrow pathway and found yourself in between a fight between a group of prisoners and guards. You instinctively joined the prisoners' side into the battle. Press any button to continue.",
+            "next_state" : [
+            {
+                "state_name" : "AAAA",
+                "key_input"  : "A"
+            },
+            {
+                "state_name" : "AAAA",
+                "key_input"  :"B"
+            },
+            {
+                "state_name" : "AAAA",
+                "key_input"  :"C"
+            },
+            {
+                "state_name" : "AAAA",
+                "key_input"  :"D"
+            }
+        ]
+        },
+
+        "BAB" : {
+            "text" : "You go to the left pathway and found a light at the end of the tunnel. You start running towards it and found yourself outside in the sun. You looked behind you and see the front gate of the prison you were just in. Excitedly, you run for freedom only to get blown up because the guards set that path up to lead into a minefield. Press any button to restart.",
+            "next_state" : [
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }   
+        ]
+        },
+
+        "BAC" : {
+            "text" : "You walk towards the path to the right and you found a large group of other prisoners. To your surprise, they were partying, singing and dancing around in a circle. <br> A/B = Ask one of them of what's going on. <br> C/D = Fight them!",
+            "next_state" : [
+            {
+                "state_name" : "BACA",
+                "key_input"  : "A"
+            },
+            {
+                "state_name" : "BACA",
+                "key_input"  :"B"
+            },
+            {
+                "state_name" : "BACD",
+                "key_input"  :"C"
+            },
+            {
+                "state_name" : "BACD",
+                "key_input"  :"D"
+            }
+        ]
+        },
+
+        "BACA" : {
+            "text" : "You whispered to one of the prisoners and asked what was going on and they said, 'the great monkey king ritual is coming HAHAHAHA!' Suddenly, you feel a large earthquake as the prisoners became louder and more excited. Across the pathway you see a giant armored monkey with a stick. All of the prisoners yelled 'for the greater good!!!' and the monkey grabbed you and all the other prisoners with one hand and swalled you all like a snack. Press any button to restart.",
+            "next_state" : [
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }    
+        ]
+        },
+
+        "BACD" : {
+            "text" : "Ok, game creator here talking to you, yes you the player. You really think you would win by yourself, unarmed 1 vs a large group of prisoners. You are very delulu. haha but fr tho, Press any button to restart.",
+            "next_state" : [
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }    
+        ]
+        },
+
+        "BAD" : {
+            "text" : "You follow the path behind you and you found a giant snake, 4x the size of any human being, staring right at you. The snake quickly whips you towards it with its tail before you could even react. The snake quickly squeezes your entire body until ... lets keep it PG 13 so uhh yea just don't pick this again. <br> Press any button to restart.",
+            "next_state" : [
+                {
+                    "state_name" : "start",
+                    "key_input"  : "A"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"B"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"C"
+                },
+                {
+                    "state_name" : "start",
+                    "key_input"  :"D"
+                }     
+               ]
+        },
+
+        "C" : {
+            "text" : "As soon as you got most of your body through the window, the towers deployed their turrets and shot you in a million different pieces. <br> Press any button to start over.",
+            "next_state" : [ 
+                            {
+                                "state_name" : "start",
+                                "key_input"  : "A"
+                            },
+                            {
+                                "state_name" : "start",
+                                "key_input"  :"B"
+                            },
+                            {
+                                "state_name" : "start",
+                                "key_input"  :"C"
+                            },
+                            {
+                                "state_name" : "start",
+                                "key_input"  :"D"
+                            }
+             ]
+        }
+    }
+}
